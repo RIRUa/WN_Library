@@ -9,13 +9,13 @@ import UIKit
 
 public class WNPasswordTextfield: UITextField {
     
-    var viewEnable:Bool
+    public var viewEnable:Bool
     private var calledTime: Int = 0
     
     private let button = UIButton()
     
     
-    init() {
+    public init() {
         
         // 変数に設定
         viewEnable = false
@@ -43,7 +43,7 @@ public class WNPasswordTextfield: UITextField {
     }
     
     
-    init(TextfieldSize size: CGSize) throws {
+    public init(TextfieldSize size: CGSize) throws {
         
         
         if size.height < 20 || size.width < 50 {
@@ -78,7 +78,7 @@ public class WNPasswordTextfield: UITextField {
     }
     
     
-    @objc func pushed_Eye (_ sender: UIButton) {
+    public @objc func pushed_Eye (_ sender: UIButton) {
         
         var pictName:String = ""
         

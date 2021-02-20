@@ -2,7 +2,7 @@
 //  WN_Library.h
 //  WN_Library
 //
-//  Created by 渡辺奈央騎 on 2021/02/20.
+//  Created by RIRUa on 2021/02/20.
 //
 
 #import <Foundation/Foundation.h>
