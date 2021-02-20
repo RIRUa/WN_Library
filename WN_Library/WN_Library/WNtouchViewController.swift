@@ -8,7 +8,7 @@
 import UIKit
 
 
-public class WNtouchViewController: UIViewController {
+open class WNtouchViewController: UIViewController {
     
     private let imageView = UIImageView()
     
@@ -126,7 +126,7 @@ extension WNtouchViewController: UITextFieldDelegate, UNUserNotificationCenterDe
     }
     
     // キーボードの表示
-    public @objc func showKeyBoard(notification: Notification){
+    @objc func showKeyBoard(notification: Notification){
         let keyboardFrame = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as AnyObject).cgRectValue
         
         /**　キーボードの大きさ　**/
@@ -172,7 +172,7 @@ extension WNtouchViewController: UITextFieldDelegate, UNUserNotificationCenterDe
     }
     
     // キーボードを隠す
-    public @objc func hideKeyBoard(notification: Notification){
+    @objc func hideKeyBoard(notification: Notification){
         
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: [], animations: {
             self.view.transform = .identity

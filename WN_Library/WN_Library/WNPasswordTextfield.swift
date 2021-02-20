@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class WNPasswordTextfield: UITextField {
+open class WNPasswordTextfield: UITextField {
     
     public var viewEnable:Bool
     private var calledTime: Int = 0
@@ -73,12 +73,12 @@ public class WNPasswordTextfield: UITextField {
     }
     
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     
-    public @objc func pushed_Eye (_ sender: UIButton) {
+    @objc func pushed_Eye (_ sender: UIButton) {
         
         var pictName:String = ""
         
