@@ -11,6 +11,9 @@
 		5AE5E9DF25E13AD70008C6FC /* WNError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5E9DC25E13AD70008C6FC /* WNError.swift */; };
 		5AE5E9E025E13AD70008C6FC /* WNPasswordTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5E9DD25E13AD70008C6FC /* WNPasswordTextfield.swift */; };
 		5AE5E9E125E13AD70008C6FC /* WNtouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5E9DE25E13AD70008C6FC /* WNtouchViewController.swift */; };
+		5AE5E9E925E14B0D0008C6FC /* openEye.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE5E9E625E14B0D0008C6FC /* openEye.png */; };
+		5AE5E9EA25E14B0D0008C6FC /* closeEye.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE5E9E725E14B0D0008C6FC /* closeEye.png */; };
+		5AE5E9EB25E14B0D0008C6FC /* touchPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE5E9E825E14B0D0008C6FC /* touchPoint.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		5AE5E9DC25E13AD70008C6FC /* WNError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WNError.swift; sourceTree = "<group>"; };
 		5AE5E9DD25E13AD70008C6FC /* WNPasswordTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WNPasswordTextfield.swift; sourceTree = "<group>"; };
 		5AE5E9DE25E13AD70008C6FC /* WNtouchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WNtouchViewController.swift; sourceTree = "<group>"; };
+		5AE5E9E625E14B0D0008C6FC /* openEye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = openEye.png; sourceTree = "<group>"; };
+		5AE5E9E725E14B0D0008C6FC /* closeEye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeEye.png; sourceTree = "<group>"; };
+		5AE5E9E825E14B0D0008C6FC /* touchPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touchPoint.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		5AE5E9D225E13ABA0008C6FC /* WN_Library */ = {
 			isa = PBXGroup;
 			children = (
+				5AE5E9E425E14AD10008C6FC /* resource */,
 				5AE5E9D325E13ABA0008C6FC /* WN_Library.h */,
 				5AE5E9D425E13ABA0008C6FC /* Info.plist */,
 				5AE5E9DC25E13AD70008C6FC /* WNError.swift */,
@@ -59,6 +66,16 @@
 				5AE5E9DE25E13AD70008C6FC /* WNtouchViewController.swift */,
 			);
 			path = WN_Library;
+			sourceTree = "<group>";
+		};
+		5AE5E9E425E14AD10008C6FC /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				5AE5E9E725E14B0D0008C6FC /* closeEye.png */,
+				5AE5E9E625E14B0D0008C6FC /* openEye.png */,
+				5AE5E9E825E14B0D0008C6FC /* touchPoint.png */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +147,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE5E9EA25E14B0D0008C6FC /* closeEye.png in Resources */,
+				5AE5E9EB25E14B0D0008C6FC /* touchPoint.png in Resources */,
+				5AE5E9E925E14B0D0008C6FC /* openEye.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
