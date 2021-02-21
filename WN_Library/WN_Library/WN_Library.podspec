@@ -11,9 +11,9 @@ Pod::Spec.new do |spec|
 
   spec.authors      = 'watanao'
   spec.platform       = :ios, "10.0" #プラットフォーム
-  spec.swift_versions = "4.0" #Swiftのバージョン
-  spec.pod_target_xcconfig  = { 'SWIFT_VERSION' => '4.0' } #Swiftのバージョン．上との違いがわかっていません．
-  spec.source_files   = "WN_Library/WN_Library/**/*.{swift}" #ソースファイルを正規表現で指定
+  spec.swift_versions = "5.3" #Swiftのバージョン
+  spec.pod_target_xcconfig  = { 'SWIFT_VERSION' => '5.3' } #Swiftのバージョン．上との違いがわかっていません．
+  spec.source_files   = "**/*.{swift}" #ソースファイルを正規表現で指定
 
   spec.source       = { 
     :git => 'https://github.com/RIRUa/WN_Library.git', 
