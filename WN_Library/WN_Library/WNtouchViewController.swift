@@ -8,7 +8,7 @@
 import UIKit
 
 
-open class WNtouchViewController: UIViewController {
+public class WNtouchViewController: UIViewController {
     
     private let imageView = UIImageView()
     

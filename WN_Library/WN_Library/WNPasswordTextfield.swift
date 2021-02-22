@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class WNPasswordTextfield: UITextField {
+public class WNPasswordTextfield: UITextField {
     
     public var viewEnable:Bool
     private var calledTime: Int = 0
