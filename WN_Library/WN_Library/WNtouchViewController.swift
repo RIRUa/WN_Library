@@ -17,7 +17,7 @@ public class WNtouchViewController: UIViewController {
     private var selectedTextfield:UITextField?
     
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         
         super.viewDidLoad()
         
@@ -34,7 +34,7 @@ public class WNtouchViewController: UIViewController {
         
     }
     
-    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         self.imageView.center = CGPoint(
             x: touches.first!.location(in: self.view).x,
@@ -51,7 +51,7 @@ public class WNtouchViewController: UIViewController {
         
     }
     
-    public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         guard let touch = touches.first else {return}
         
@@ -63,7 +63,7 @@ public class WNtouchViewController: UIViewController {
         
     }
     
-    public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         imageView.isHidden = true
         
@@ -75,7 +75,7 @@ public class WNtouchViewController: UIViewController {
      *  テキストフィールドをViewControllerに登録する関数
      *
      ***/
-    public func addTextfield(textfield:UITextField) {
+    open func addTextfield(textfield:UITextField) {
         
         self.textfields.append(textfield)
         
@@ -86,7 +86,7 @@ public class WNtouchViewController: UIViewController {
      *　テキストフィールドdelegateを登録し，テキストフィールド以外の場所をタップした時のテキストフィールド選択を解除
      *
      ***/
-    public func register_textfieldDelegate() {
+    open func register_textfieldDelegate() {
         for Atextfield in textfields {
             Atextfield.delegate = self
         }
@@ -115,13 +115,13 @@ public class WNtouchViewController: UIViewController {
 
 extension WNtouchViewController: UITextFieldDelegate, UNUserNotificationCenterDelegate{
     
-    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    open func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
     /**選択されたテキストフィールドを保存**/
-    public func textFieldDidBeginEditing(_ textField: UITextField) {
+    open func textFieldDidBeginEditing(_ textField: UITextField) {
         self.selectedTextfield = textField
     }
     
